@@ -19,28 +19,36 @@ body {
 
 /* ================= HEADER ================= */
 
-.top-bar {
+/* ================= HEADER ================= */
 
+.top-bar {
     width: 100%;
     height: 70px;
 
-    background-color: white;
+    /* Glass effect */
+    background: rgba(255, 255, 255, 0.18);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
 
+    /* Border */
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+
+    /* Layout */
     display: flex;
     align-items: center;
 
     padding: 0 40px;
 
-    border-bottom: 1px solid #ddd;
-
+    /* Position */
     position: fixed;
-
     top: 0;
     left: 0;
 
     z-index: 1000;
-}
 
+    /* Shadow */
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.08);
+}
 
 /* Logo */
 
@@ -72,7 +80,7 @@ body {
 
     display: flex;
 
-    gap: 35px;
+    gap: 100px;
 }
 
 .page-options a {
